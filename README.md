@@ -8,3 +8,19 @@ Kaust *korpus_json* sisaldab korpuse EstNLTK json kujul versiooni.
 Korpuse teisendamisel BRAT-i kujult EstNLTK json kujule kasutati skripti *convert_BRAT_to_estnltk_json.py* (kättesaadav aadressil https://github.com/soras/EstTimexCorpora/blob/master/scripts/convert_BRAT_to_estnltk_json.py).
 
 Eelnõuded: `Python 3.7+` `EstNLTK 1.6.9+`
+
+Json kujul versiooni kasutamisel tuleb Pythonis kaust sisse lugeda. Dokumendid salvestatakse EstNLTK *Text* objektidena.
+
+*Text* objektidel on järgnevad märgenduskihid:
+
+`brat_entities` - abikiht mitmesõnaliste ja katkendlike märgenduste jaoks
+
+`entities` - entiteedid
+
+`events` - sündmused
+
+`timexes` - ajaväljendid
+
+`tlinks` - ajaseosed
+
+`has_argument` - argumentseosed sündmuste vahel
