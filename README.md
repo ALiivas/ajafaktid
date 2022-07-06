@@ -3,13 +3,13 @@ Korpus loodi Annely-Maria Liivase bakalaureusetöö *Ajaväljendite korpusemärg
 
 Kaust *korpus_brat* sisaldab korpuse BRAT-i versiooni ehk *.ann* ja *.txt* faile ning konfiguratsioonifaili *annotation.conf*.
 
-Kaust *korpus_json* sisaldab korpuse EstNLTK json kujul versiooni.
+Kaust *korpus_json* sisaldab korpuse EstNLTK JSON kujul versiooni.
 
-Korpuse teisendamisel BRAT-i kujult EstNLTK json kujule kasutati skripti *convert_BRAT_to_estnltk_json.py* (kättesaadav aadressil https://github.com/soras/EstTimexCorpora/blob/master/scripts/convert_BRAT_to_estnltk_json.py).
+Korpuse teisendamisel BRAT-i kujult EstNLTK JSON kujule kasutati skripti *convert_BRAT_to_estnltk_json.py* (kättesaadav aadressil https://github.com/soras/EstTimexCorpora/blob/master/scripts/convert_BRAT_to_estnltk_json.py).
 
 Eelnõuded: `Python 3.7+` `EstNLTK 1.6.9+`
 
-Json kujul versiooni kasutamisel tuleb Pythonis kaust sisse lugeda. Dokumendid salvestatakse EstNLTK *Text* objektidena.
+JSON kujul versiooni kasutamisel tuleb Pythonis kaust sisse lugeda. Dokumendid salvestatakse EstNLTK *Text* objektidena.
 
 *Text* objektidel on järgnevad märgenduskihid:
 
@@ -24,3 +24,5 @@ Json kujul versiooni kasutamisel tuleb Pythonis kaust sisse lugeda. Dokumendid s
 `tlinks` - ajaseosed
 
 `has_argument` - argumentseosed sündmuste vahel
+
+Juhised JSON failide sisselugemiseks, märgenduskihtide küsimiseks ja seoseliikmete kättesaamiseks on Jupyter Notebooki failis *JSON versiooni kasutusjuhised*.
