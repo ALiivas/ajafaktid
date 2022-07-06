@@ -1,4 +1,4 @@
-# ajafaktid
+# Ajafaktid
 Korpus loodi Annely-Maria Liivase bakalaureusetöö *Ajaväljendite korpusemärgenduse laiendamine sündmuste ja entiteetide ajalisteks omadusteks TimeML raamistikus* raames. Korpusetekstid pärinevad eesti keele ajaväljendite korpusest (EstTimexCorpora). Olemasolevale ajaväljendite märgendusele lisati bakalaureusetöö raames ajaväljenditega seotud sündmuste ja entiteetide märgendus.
 
 Kaust *korpus_brat* sisaldab korpuse BRAT-i versiooni ehk *.ann* ja *.txt* faile ning konfiguratsioonifaili *annotation.conf*.
@@ -9,7 +9,7 @@ Korpuse teisendamisel BRAT-i kujult EstNLTK JSON kujule kasutati skripti *conver
 
 Eelnõuded: `Python 3.7+` `EstNLTK 1.6.9+`
 
-JSON kujul versiooni kasutamisel tuleb Pythonis kaust sisse lugeda. Dokumendid salvestatakse EstNLTK *Text* objektidena.
+JSON kujul versiooni kasutamisel tuleb Pythonis kaust sisse lugeda. Failid teisendatakse EstNLTK *Text* objektideks.
 
 *Text* objektidel on järgnevad märgenduskihid:
 
@@ -23,6 +23,6 @@ JSON kujul versiooni kasutamisel tuleb Pythonis kaust sisse lugeda. Dokumendid s
 
 `tlinks` - ajaseosed
 
-`has_argument` - argumentseosed sündmuste vahel
+`event_arguments` - argumentseosed sündmuste vahel
 
 Juhised JSON failide sisselugemiseks, märgenduskihtide küsimiseks ja seoseliikmete kättesaamiseks on Jupyter Notebooki failis *JSON versiooni kasutusjuhised*.
